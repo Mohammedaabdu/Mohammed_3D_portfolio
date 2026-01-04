@@ -1,6 +1,6 @@
 import solarSystem from "@/assets/solarSystem.png";
 import trejdegruppen from "@/assets/tredjegruppenAB.png";
-
+import portfolio from "@/assets/portfolio.png";
 export interface IProject {
   img: string;
   prjectName: string;
@@ -21,7 +21,7 @@ export const projects: IProject[] = [
     url: "https://3-d-solar-system-smoky.vercel.app/",
   },
   {
-    img: "ingern",
+    img: "portfolio",
     prjectName: "Portfolio",
     description: "My own portfolio",
     url: "no",

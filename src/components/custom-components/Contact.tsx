@@ -42,7 +42,7 @@ const Contact = () => {
     },
   });
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {
+  async function onSubmit(_values: z.infer<typeof formSchema>) {
     if (!formref.current) return;
     try {
       await emailjs.sendForm(
