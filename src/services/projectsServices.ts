@@ -24,6 +24,6 @@ export const projects: IProject[] = [
     img: portfolio,
     prjectName: "Portfolio",
     description: "My own portfolio",
-    url: "no",
+    url: "https://mohammed-3d-portfolio.vercel.app/",
   },
 ];
