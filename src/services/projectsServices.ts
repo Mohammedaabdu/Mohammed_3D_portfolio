@@ -21,7 +21,7 @@ export const projects: IProject[] = [
     url: "https://3-d-solar-system-smoky.vercel.app/",
   },
   {
-    img: "portfolio",
+    img: portfolio,
     prjectName: "Portfolio",
     description: "My own portfolio",
     url: "no",
