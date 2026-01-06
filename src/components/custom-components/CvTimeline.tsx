@@ -8,7 +8,7 @@ interface CvTimelineProps {
 
 const CvTimeline = ({ items }: CvTimelineProps) => {
   return (
-    <section id="expirence">
+    <section className="mt-15" id="expirence">
       <Container>
         <div className="text-center md:text-start">
           <p className="uppercase text-teal-300">What I have done so far</p>
@@ -33,7 +33,7 @@ const CvTimeline = ({ items }: CvTimelineProps) => {
                 } flex-row `}
               >
                 {/* Dot */}
-                <div className="absolute left-0 top-2 w-12 h-12 rounded-full overflow-hidden md:-translate-x-1/2  md:left-1/2">
+                <div className="absolute left-0 top-2 w-12 h-12 rounded-full overflow-hidden md:-translate-x-1/2 md:left-1/2">
                   <img
                     src={exp.logo}
                     alt={exp.company}

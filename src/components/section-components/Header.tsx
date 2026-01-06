@@ -42,7 +42,7 @@ const Header = () => {
     },
   ];
   return (
-    <header className="flex justify-between md:justify-around items-center py-2 px-4 space-x-4 relative">
+    <header className="fixed min-w-screen top-0 z-100 flex justify-between md:justify-around items-center py-2 px-4 space-x-4 bg-neutral-900">
       <a
         href="#home"
         className="text-white text-2xl md:text-3xl font-medium hover:text-teal-300 transition-transform"
@@ -54,7 +54,13 @@ const Header = () => {
         onClick={() => setIsOpen(true)}
         className="md:hidden"
       />
-
+      {/* Mobile Nav */}
+      {isOpen && (
+        <div
+          onClick={() => setIsOpen(false)}
+          className="fixed inset-0 bg-black/10 backdrop-blur-[1px] z-10"
+        ></div>
+      )}
       <motion.nav
         variants={navVariants}
         initial="closed"
@@ -73,12 +79,14 @@ const Header = () => {
             <a
               key={idx}
               href={nav.ref}
+              onClick={() => setIsOpen(false)}
               className="rounded-full px-4 text-center font-medium text-teal-300 hover:text-teal-300 hover:bg-neutral-600/30 duration-300 transition"
             >
               {nav.title}
             </a>
           ))}
           <a
+            onClick={() => setIsOpen(false)}
             href="#timeline"
             className=" inline-block rounded-full p-2 text-center font-medium bg-teal-600 hover:bg-teal-400/80 hover:scale-115 duration-300 transition"
           >

@@ -5,7 +5,7 @@ import Hero from "./Hero";
 import { expirences } from "@/services/expirencesService";
 const Main = () => {
   return (
-    <main className="grow">
+    <main className="grow mt-15 md:mt-25">
       <Hero></Hero>
       <CvTimeline items={expirences}></CvTimeline>
       <Projects></Projects>
